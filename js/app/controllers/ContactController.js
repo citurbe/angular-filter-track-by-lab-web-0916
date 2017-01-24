@@ -22,6 +22,7 @@ function ContactController($filter) {
 	}];
 	this.search = '';
 
+
 	this.refilter = function() {
         this.filteredContacts = $filter('filter')(this.contacts, this.search);
 	};
